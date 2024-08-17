@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>AZ2_4.BlobLibrary</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Identity" Version="1.13.0-beta.1" />
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.22.0-beta.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0-preview.6.24327.7" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-preview.7.24405.7" />
+    </ItemGroup>
+
+</Project>
