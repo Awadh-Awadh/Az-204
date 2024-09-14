@@ -13,7 +13,7 @@ public static class BlobServiceHelper
         string fileName = $"wtfile{Guid.NewGuid().ToString()}.txt";
         await File.WriteAllTextAsync(path, "Hello World");
         
-        var blobClient = blobContainerClient.GetBlobClient(blobName);
+        BlobClient blobClient = blobContainerClient.GetBlobClient(blobName);
 
         await using FileStream stream = File.OpenRead(path);
         await blobClient.UploadAsync(stream);
